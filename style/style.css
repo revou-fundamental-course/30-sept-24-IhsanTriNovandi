@@ -1,0 +1,137 @@
+body{
+    width: auto;
+}
+
+main{
+    margin: auto;
+    width: max-content;
+    border: solid #DEE5D4 3px;
+    border-radius: 20px;
+    background-color: #DEE5D4;
+    padding: 10px;
+}
+
+header{
+    margin: 20px;
+}
+
+h2,p,div,form{
+    text-align: center;
+}
+
+article{
+    margin: auto;
+    padding: 20px;
+    font-size: smaller;
+    font-family: "Inter", sans-serif;
+}
+
+
+
+a:hover{
+    color:#8EACCD;
+}
+
+h1{
+    font-family: "Titan One", monospace;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 7px;
+    background-color: #DEE5D4;
+    width: max-content;
+    margin: auto;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+h2,p{
+    padding: 10px;
+    font-size: larger;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+}
+
+form,div{
+    font-family: "Inter", sans-serif;
+    font-size: large;
+}
+
+button{
+    font-family: "Inter", sans-serif;
+    font-size: large;
+    border-radius: 20px;
+    margin: 20px;
+    border: solid whitesmoke;
+    background-color: whitesmoke;
+    cursor: pointer;
+    transition: all 0.s ease-in;
+}
+
+button:hover{
+    background-color: #8EACCD;
+    border: solid #8EACCD;
+    font-weight: bold;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    padding: 25px;
+    font-size: larger;
+    border-radius: 10px;
+    border-style: unset;
+}
+
+table{
+    margin: auto;
+}
+
+th,td{
+    font-family: "Inter", sans-serif;
+    border-radius: 7px;
+    border: solid black 1px;
+    padding: 10px;
+    border-style: unset;
+}
+
+th{
+    background-color: whitesmoke;
+}
+
+footer{
+    font-size: xx-small;
+    background-color:#DEE5D4;
+    width: max-content;
+    margin: auto;
+    border-radius: 30px;
+}
+
+@media screen and (max-width: 480px) {
+    html{
+        overflow-x: hidden;
+    }
+
+    body{
+        width: min-content;
+    }
+
+    main{
+        margin-right: 9px;
+        width: min-content;
+    }
+
+    header{
+        margin-left: 70px;
+        width: min-content;
+    }
+
+    h1{
+        text-align: center;
+        width: 100%;
+    }
+
+
+}

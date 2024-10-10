@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Suhu</title>
+    <link rel="stylesheet" href="style/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik+Mono+One&family=Titan+One&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-image:
+            url('image/b8f41ea8bffa09ed568d6cdf2f8962fb.jpg');
+            background-size: cove;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kalkulator Konversi Suhu</h1>
+    </header>
+
+    <main>
+        <!-- Form Content -->
+        <section>
+            <!-- intruction -->
+             <article>
+                <p>
+                    Gunakan Kotak Untuk Menemukan Koverter Metrik Yang Anda Butuhkan
+                </p>
+             </article>
+
+             <!-- Input Suhu -->
+              <form class="container1">
+                <div>
+                    <label for="input-suhu">Celcius (&deg;C)</label>
+                </div>
+
+                <input type="number" id="input-suhu"></input>
+              </form>
+              <div>
+                <button type="button" onclick="validation()" class="form-btn form-btn-submit">Konversi</button>
+                <button type="button" onclick="reset()" class="form-btn form-btn-reset">Reset</button>
+              </div>
+
+              <!-- Hasil Input -->
+               <div class="container1">
+                <div>
+                    <label for="hasil-suhu">Farenheit (&deg;F)</label>
+                </div>
+
+                <input type="number" id="hasil-suhu"></input>
+               </div>
+
+               <!-- Cara Kalkulasi -->
+                <div class="container1">
+                    <div>
+                        <label for="how-to-suhu">Cara Kalkulasi</label>
+                    </div>
+
+                    <input id="how-to-suhu"></input>
+                </div>
+        </section>
+
+        <section>
+            <!-- intruction -->
+             <article>
+                <a href="#" id="Farenheit-ke-Celcius">
+                    Farenheit (℉) ke Celcius (℃)
+                </a>
+             </article>
+
+             <div id="Farenheit-Section" style="display: none;">
+                             <!-- Input Suhu -->
+              <form class="container1">
+                <div>
+                    <label for="input-suhu">Farenheit (&deg;F)</label>
+                </div>
+
+                <input type="number" id="input-suhu2"></input>
+              </form>
+              <div>
+                <button type="button" onclick="validation2()" class="form-btn form-btn-submit">Konversi</button>
+                <button type="button" onclick="reset2()" class="form-btn form-btn-reset">Reset</button>
+              </div>
+
+              <!-- Hasil Input -->
+               <div class="container1">
+                <div>
+                    <label for="hasil-suhu">Celcius (&deg;C)</label>
+                </div>
+
+                <input type="number" id="hasil-suhu2"></input>
+               </div>
+
+               <!-- Cara Kalkulasi -->
+                <div class="container1">
+                    <div>
+                        <label for="how-to-suhu">Cara Kalkulasi</label>
+                    </div>
+
+                    <input id="how-to-suhu2"></input>
+                </div>
+             </div>
+        </section>
+
+        <!-- Info Content -->
+        <section>
+            <p>
+                Cara Konversi Celcius (℃) Ke Farenheit (℉)
+            </p>
+        </section>
+
+        <article>
+            <p>
+                <span>S</span><sub>(℉)</sub> = (S<sub>(℃)</sub> x 9/5) + 32
+            </p>
+            <p>
+                atau
+            </p>
+            <p>
+                <span>S</span><sub>(℉)</sub> = (S<sub>(℃)</sub> x 1.8) + 32
+            </p>
+        </article>
+
+        <section>
+            <h2>
+                Skala Suhu
+            </h2>
+        </section>
+
+        <article>
+            <div>
+                <table>
+                    <tr>
+                        <th>No</th>
+                        <th>Suhu</th>
+                        <th>Titik Tetap Bawah</th>
+                        <th>Titik Tetap Atas</th>
+                        <th>Jumlah Skala</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Celcius</td>
+                        <td>0℃</td>
+                        <td>100℃</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Reamur</td>
+                        <td>0°R</td>
+                        <td>80°R</td>
+                        <td>80</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Farenheit</td>
+                        <td>32℉</td>
+                        <td>212℉</td>
+                        <td>180</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Kelvin</td>
+                        <td>273°K</td>
+                        <td>373°K</td>
+                        <td>100</td>
+                    </tr>
+                </table>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>Made by Ihsan 2024</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
